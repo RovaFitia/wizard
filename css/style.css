@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "SpaceGrotesk";
+    src: url("../font/SpaceGrotesk.ttf"), sans-serif;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../font/Inter.ttf"), sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html {
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.logo {
+    font-family: "SpaceGrotesk";
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+button {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #111;
+}
+
+.navbar,
+.hero,
+.sponsor,
+.main {
+    max-width: 1280px;
+    width: calc(100% - 40px);
+    margin: auto;
+}
+
+/*  Navigation  */
+.navbar {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar i {
+    font-size: 2.5rem;
+    display: block;
+    rotate: 45deg;
+}
+.navbar .logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.navbar .nav-items ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.navbar li {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navbar button {
+    background-color: transparent;
+}
+
+/* Heor banner */
+.hero {
+    width: 100%;
+    min-height: 70vh;
+    height: auto;
+    padding: 70px 0 0;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 45px;
+}
+
+.hero .col {
+    height: auto;
+}
+
+.hero .col:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero .col:last-of-type {
+    padding-block: 10px;
+}
+.hero .col:last-of-type img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero .col:first-of-type h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero .col:first-of-type p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.hero .col:first-of-type button {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 25px 40px;
+    margin-top: 15px;
+    background-color: #111;
+    color: #fff;
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.hero .col:first-of-type button:hover {
+    background-color: #fff;
+    color: #111;
+    transition: background-color 0.3s;
+}
+
+.sponsor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.sponsor img {
+    width: 130px;
+}
+
+.main .title {
+    width: 70%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.main .title h2 {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0px 10px;
+    border-radius: 5px;
+    background-color: #b9ff66;
+}
+
+.main .title p {
+    font-size: 20px;
+}
