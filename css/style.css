@@ -225,9 +225,49 @@ button {
     border-radius: 5px;
 }
 
+.card-items .content a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.card-items .content i {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card-items.card-items:nth-of-type(1) .content h3,
 .card-items.card-items:nth-of-type(4) .content h3 {
     background-color: #b9ff66;
+}
+
+.card-items.card-items:nth-of-type(1) .content i,
+.card-items.card-items:nth-of-type(4) .content i {
+    background-color: #111;
+    color: #b9ff66;
+}
+
+.card-items.card-items:nth-of-type(2) .content i,
+.card-items.card-items:nth-of-type(3) .content i {
+    background-color: #fff;
+    color: #111;
+}
+
+.card-items.card-items:nth-of-type(1) .content a,
+.card-items.card-items:nth-of-type(4) .content a {
+    color: #111;
+}
+
+.card-items.card-items:nth-of-type(2) .content a,
+.card-items.card-items:nth-of-type(3) .content a {
+    color: #fff;
 }
 
 .card-items.card-items:nth-of-type(2) .content h3,
