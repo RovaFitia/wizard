@@ -49,3 +49,63 @@ function initAnimation() {
 }
 
 initAnimation();
+
+function scrollToTop() {
+  const tl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".main",
+      scroller: "body",
+      start: "top 50%",
+      end: "top 0",
+      scrub: 2,
+    },
+  });
+
+  tl2.from(".title", {
+    y: 80,
+    opacity: 0,
+    duration: 0.5,
+  });
+
+  tl2.from(
+    ".card-items.left",
+    {
+      x: -200,
+      opacity: 0,
+      duration: 0.5,
+    },
+    "anim",
+  );
+
+  tl2.from(
+    ".card-items.right",
+    {
+      x: 200,
+      opacity: 0,
+      duration: 0.5,
+    },
+    "anim",
+  );
+
+  tl2.from(
+    ".card-items.left2",
+    {
+      x: -200,
+      opacity: 0,
+      duration: 0.5,
+    },
+    "anim2",
+  );
+
+  tl2.from(
+    ".card-items.right2",
+    {
+      x: 200,
+      opacity: 0,
+      duration: 0.5,
+    },
+    "anim2",
+  );
+}
+
+scrollToTop();
